@@ -10,7 +10,7 @@ services:
       - MYSQL_PASSWORD=password
       - MYSQL_DATABASE=demo
     web:
-     image: finalwebapp
+     image: dcomposeapp   
      ports:
       - "80"
-~                                                                                                                       ~                 
+                                                                                                            

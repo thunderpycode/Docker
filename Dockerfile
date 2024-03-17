@@ -11,7 +11,7 @@ RUN echo "mkdir -p /var/run/apache2" >> /run.sh
 RUN echo "/usr/sbin/apache2 -D FOREGROUND" >> /run.sh
 RUN chmod 755 /run.sh
 
-EXPOSE 80
+EXPOSE 90
 
 CMD /run.sh
 
