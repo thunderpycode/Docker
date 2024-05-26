@@ -1,4 +1,4 @@
-1. Run Image by: docker run -dp 8080:80 <image_name>
+1. Run Image by: docker run -d -p 9090:90 curlimg  
    8080:80 --> Binding localhost's 8080 port to container's 80.
 
 2. echo -e "HTTP/1.1 200 OK\r\n\r\nHello Message" | nc -l -p 80
