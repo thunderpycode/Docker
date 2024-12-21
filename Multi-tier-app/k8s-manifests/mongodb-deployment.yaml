@@ -19,6 +19,9 @@ spec:
             - containerPort: 27017
           volumeMounts:
             - name: mongo-data
+              hostPath:
+                path: /mongo-data  # Local directory path on your machine
+                type: DirectoryOrCreate
               mountPath: /data/db
       volumes:
         - name: mongo-data

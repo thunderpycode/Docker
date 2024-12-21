@@ -43,4 +43,8 @@ issue is from backend url in app.js in backend folder
 
 9/11 
 
-kubectl create configmap frontend-config --from-file=./frontend/index.html --from-file=./nginx/default.conf
+everything worked using above troubleshooting. but need to add mongo-db data backup :
+ 
+ hostPath:
+      path: /path/to/your/local/mongo-data  # Local directory path on your machine
+      type: DirectoryOrCreate
